@@ -1,18 +1,31 @@
 public class SinglyLinkedList {
     Node head = null;
 
-    public void insert(int x){
+    public void insert(int value){
+        addAtLast(value);
+    }
+    void addAtFirst(int x){
+        Node newNode = new Node(x);
+        if(head == null){
+          head = newNode;
+        }else {
+        newNode.next = head;
+        head = newNode;
+        }
+    }
+    void addAtLast(int x){
         Node newNode = new Node(x);
         if(head == null){
             head = newNode;
         }else{
-            Node current = head;
-            while (current.next != null){
-                current =current.next;
+            Node curr = head;
+            while (curr.next !=null){
+                curr = curr.next;
             }
-            current.next = newNode;
+            curr.next = newNode;
         }
     }
+
     public void insert(int index, int value){
         Node newNode = new Node(value);
         if(index == 0 && head == null){
