@@ -1,5 +1,6 @@
 public class SinglyLinkedList {
-    Node head = null;
+    private Node head = null;
+    private int size=0;
 
     public void insert(int value){
         addAtLast(value);
@@ -12,6 +13,7 @@ public class SinglyLinkedList {
         newNode.next = head;
         head = newNode;
         }
+        size++;
     }
     void addAtLast(int x){
         Node newNode = new Node(x);
@@ -24,6 +26,7 @@ public class SinglyLinkedList {
             }
             curr.next = newNode;
         }
+        size++;
     }
 
     public void insert(int index, int value){
@@ -38,19 +41,41 @@ public class SinglyLinkedList {
             newNode.next = prev.next;
             prev.next = newNode;
         }
+        size++;
 
     }
 
-    public void remove(int index){
+    public void remove(int index)throws Exception{
         if(head == null) throw new NullPointerException("List is Empty");
+        if(index > size || index<0) throw new Exception("Illegal index Value");
         if(index == 0)  head = head.next;
         Node curr = head;
         for(int i=1; i<index;i++){
             curr = curr.next;
         }
-        if (curr == null) throw new IndexOutOfBoundsException();
         curr.next = curr.next.next;
+
+        size--;
     }
+
+    void removeFirst(){
+        if(size ==0) throw new NullPointerException("List is Empty");
+        head = head.next;
+        size--;
+    }
+    void removeLast(){
+        if(size ==0) throw new NullPointerException("List is Empty");
+        Node curr = head;
+        while(curr.next.next != null){
+            curr = curr.next;//[1,2,3,4]
+        }
+        curr.next = null;
+        size--;
+
+    }
+
+    int size(){return size;}
+
     public void traverse(){
         Node curr = head;
         while (curr != null){

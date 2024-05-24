@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         SinglyLinkedList linkedList = new SinglyLinkedList();
 
         for(int i =1; i<=10;i++){
@@ -7,7 +7,7 @@ public class Main {
         }
         linkedList.insert(5,15);
 
-        linkedList.remove(1);
+        System.out.println(linkedList.size());
         linkedList.traverse();
 
     }
