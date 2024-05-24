@@ -37,7 +37,7 @@ public class DoublyLinkedList {
 
 
     void insert(int index, int value)throws Exception{
-        if(index > size() || index < 0) throw  new Exception("Illegal Index");
+        if(index > size() || index < 0) throw  new Exception("Illegal Index value");
         if(index==0) {
             addAtStart(value);
         }else if(index ==size()){
@@ -57,16 +57,21 @@ public class DoublyLinkedList {
     }
 
     void removeLast(){
+        if(size()==0) throw new RuntimeException("List is empty");
         tail = tail.prev;
         tail.next = null;
+        size--;
     }
 
     void removeFirst(){
+        if(size()==0) throw new RuntimeException("List is empty");
         head = head.next;
         head.prev =null;
+        size--;
     }
     void remove(int index){
         if(index >size || index <0) throw  new IndexOutOfBoundsException();
+        if(size()==0) throw new RuntimeException("List is empty");
         if(index ==0){
             removeFirst();
         }else if(index == size()){
@@ -79,6 +84,7 @@ public class DoublyLinkedList {
             curr.prev.next = curr.next;
             curr.next.prev = curr.prev;
         }
+        size--;
     }
 
 
