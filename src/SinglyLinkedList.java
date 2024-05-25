@@ -54,7 +54,6 @@ public class SinglyLinkedList {
             curr = curr.next;
         }
         curr.next = curr.next.next;
-
         size--;
     }
 
@@ -82,6 +81,24 @@ public class SinglyLinkedList {
             System.out.print(curr.item+" ");
             curr = curr.next;
         }
+    }
+
+
+    //Extra
+    //find the middle
+
+    public int findMiddle(){
+        if(size ==0) throw new NullPointerException("List is Empty");
+        if(size ==1) return head.item;
+        Node tortoise = head;
+        Node hare = head;
+
+        while (tortoise !=null && hare !=null && hare.next !=null){
+            tortoise = tortoise.next;
+            hare = hare.next.next;
+        }
+        return tortoise.item;
+
     }
 
 }
