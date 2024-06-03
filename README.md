@@ -35,7 +35,7 @@ Navigate through the branches to explore each data structure in detail. Here's y
    Navigate to the directory and checkout the branch that sparks your interest.
 
    ```bash
-   cd 101DataStructures_implementations
+   cd 101DataStructures_implementations/main
    git checkout <branch-name>
    ```
 
