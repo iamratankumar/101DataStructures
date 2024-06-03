@@ -41,9 +41,6 @@ Navigate through the branches to explore each data structure in detail. Here's y
 
    Replace `<branch-name>` with the name of the branch you want to explore (e.g., `dynamic-array`).
 
-3. **Dive In**
-
-   Each branch comes with a detailed README, implementation files, and example usage to guide you through the intricacies of the data structure.
 
 ## 🌟 Contribute and Shine
 
