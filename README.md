@@ -18,9 +18,9 @@ Navigate through the branches to explore each data structure in detail. Here's y
 - 🌱 `01_dynamicArray` - Unleash the power of Dynamic Arrays/ArrayList!
 - 🌿 `02_Singly_linkedList` - Traverse the world of Singly LinkedLists!
 - 🌿 `03_doubly_linkedList` - Traverse the world of Doubly LinkedLists!
-- 🍃 `04_stack-queue` - Master the art of Stacks and Queues!
+- 🍃 `04_Stacks_and_Queue` - Master the art of Stacks and Queues!
 - 🌳 `05_Binary_Search_Tree` - Explore the depths of Binary Search Trees!
-- 🌴 `hashtable` - Unlock the secrets of Hashtables!
+- 🌴 `06_hashTable` - Unlock the secrets of Hashtables!
 
 ## 🛠️ How to Get Started
 
