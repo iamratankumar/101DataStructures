@@ -27,7 +27,7 @@ Navigate through the branches to explore each data structure in detail. Here's y
 1. **Clone the Repository**
 
    ```bash
-   https://github.com/iamratankumar/101DataStructures_implementations.git
+   https://github.com/iamratankumar/Data-Structures-implementations.git
    ```
 
 2. **Checkout a Branch**
@@ -35,7 +35,7 @@ Navigate through the branches to explore each data structure in detail. Here's y
    Navigate to the directory and checkout the branch that sparks your interest.
 
    ```bash
-   cd 101DataStructures_implementations/main
+   cd Data-Structures-implementations/main
    git checkout <branch-name>
    ```
 
